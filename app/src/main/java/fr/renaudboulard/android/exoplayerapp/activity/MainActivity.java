@@ -15,7 +15,7 @@ import fr.renaudboulard.android.exoplayerapp.R;
 import fr.renaudboulard.android.exoplayerapp.service.StreamService;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements StreamService.Callbacks{
 
     private StreamService streamService;
     private Intent playMusicIntent;
@@ -81,4 +81,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "onServiceDisconnected called", Toast.LENGTH_SHORT).show();
         }
     };
+
+    @Override
+    public void updateTitle(String title) {
+
+    }
 }

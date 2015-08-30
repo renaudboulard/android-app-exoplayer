@@ -52,8 +52,8 @@ import com.google.android.exoplayer.util.Util;
 import java.io.IOException;
 import java.util.Arrays;
 
-import music.myjungly.fr.music.player.DemoPlayer.RendererBuilder;
-import music.myjungly.fr.music.player.DemoPlayer.RendererBuilderCallback;
+import fr.renaudboulard.android.exoplayerapp.player.DemoPlayer.RendererBuilder;
+import fr.renaudboulard.android.exoplayerapp.player.DemoPlayer.RendererBuilderCallback;
 
 /**
  * A {@link RendererBuilder} for SmoothStreaming.

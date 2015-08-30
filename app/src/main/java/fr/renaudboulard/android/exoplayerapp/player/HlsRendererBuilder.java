@@ -45,13 +45,13 @@ import com.google.android.exoplayer.util.ManifestFetcher.ManifestCallback;
 import java.io.IOException;
 import java.util.Map;
 
-import music.myjungly.fr.music.player.DemoPlayer.RendererBuilder;
-import music.myjungly.fr.music.player.DemoPlayer.RendererBuilderCallback;
+import fr.renaudboulard.android.exoplayerapp.player.DemoPlayer.RendererBuilder;
+import fr.renaudboulard.android.exoplayerapp.player.DemoPlayer.RendererBuilderCallback;
 
 /**
  * A {@link RendererBuilder} for HLS.
  */
-public class HlsRendererBuilder implements RendererBuilder, ManifestCallback<HlsPlaylist> {
+public class HlsRendererBuilder implements DemoPlayer.RendererBuilder, ManifestCallback<HlsPlaylist> {
 
   private static final int BUFFER_SEGMENT_SIZE = 256 * 1024;
   private static final int BUFFER_SEGMENTS = 64;
