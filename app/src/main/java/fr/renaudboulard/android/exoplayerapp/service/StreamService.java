@@ -56,7 +56,6 @@ public class StreamService extends Service implements
     @Override
     public void onCreate() {
         Log.d("DEBUG", "onCreate Stream Service");
-
     }
 
     @Override
@@ -117,8 +116,6 @@ public class StreamService extends Service implements
         }
     }
 
-    // DemoPlayer.Listener implementation
-
     @Override
     public void onStateChanged(boolean playWhenReady, int playbackState) {
 
@@ -150,8 +147,6 @@ public class StreamService extends Service implements
         playerNeedsPrepare = true;
         preparePlayer();
     }
-
-    // Internal methods
 
     private DemoPlayer.RendererBuilder getRendererBuilder() {
         String userAgent = Util.getUserAgent(this, "ExoPlayerDemo");
